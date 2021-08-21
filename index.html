@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+    hr.solid {
+  border-top: 3px solid #bbb;
+}
+    </style>
+</head>
+<body>
+     <section  class="flex">
+           <div>
+                <img class="pt-10 px-10" src="/images/mac.png" alt="">
+           </div>
+            <div>
+                <h1 class="text-5xl mt-5 p-5">Customize Your Blue 24-inch iMac with Apple M1 chip</h1>
+                <p class="mt-5 text-2xl p-5">The M1 chip powering the new 24-inch iMac allows it to natively run iOS apps, which you can access directly through the App Store. Not all apps are guaranteed to work well on macOS, but all of the popular ones I tested work very well on the new iMac.</p>
+                
+                <h4 class="p-5 font-bold">Memory</h4>
+                <!-- <p id="demo"></p> -->
+               <button id="8gb-memory" class="bg-green-100 px-4 rounded py-2 text-black font-medium">8GB unified memory</button>
+               
+               <button id="16gb-memory"   class="bg-green-100 px-4 rounded py-2 text-black font-medium	">16GB unified memory</button>
+               
+               
+               <h4 class="p-5 font-bold">Storage</h4>
+               <button id="256gb-storage"  class="bg-green-100 px-4 rounded py-2 text-black font-medium	">256GB SSD storage</button>
+               <button id="512gb-storage"  class="bg-green-100 px-4 rounded py-2 text-black font-medium	">512GB SSD storage</button>
+               <button id="1Tb-storage"  class="bg-green-100 px-4 rounded py-2 text-black font-medium	">1TB SSD storage</button>
+
+               <h4 class="p-5 font-bold">Choose your delevery option</h4>
+               <button id="free-Shipping" class="bg-green-100 px-4 rounded py-2 text-black font-medium	">Friday,Aug 25 FREE Prime Delevery</button>
+               <button id="on-Time-Shipping"  class="bg-green-100 px-4 rounded py-2 text-black font-medium	">Friday,Aug 21 Delevery charge $20</button>
+               
+               <div class="flex gap-14">
+
+                <div class="p-5 font-bold">
+                   <h5>Best Price </h5>
+                   <h5>Extra Memory Cost</h5>
+                   <h5>Extra Storage Cost</h5>
+                   <h5>Delivery Cost</h5>
+                  
+                   <br>
+                   <h5>Total Price</h5>
+                </div>
+
+                <div class="p-5 font-bold">
+                   <h5>$ <span id="sub-total">1299</span> </h5>
+                   <h5>$<span id="extra-memory">0</span></h5>
+                   <h5>$<span id="extra-storage">0</span></h5>
+                   <h5>$<span id="delevery-cost">0</span></h5>
+                   <br>
+                   <h5>$<span id="total-price">1299</span></h5>
+                </div>
+             </div>
+             
+             <div>
+                 <h4 class="p-5 font-bold">Add Promo Code</h4>
+                <input id="promo-input" class="bg-purple-100" type="text" placeholder="please enter promo">
+            
+                <button id="promo-apply-btn" class="bg-red-500 px-4 rounded py-2 text-white font-medium ">Apply</button>
+             </div>
+
+            </div>
+           
+        </section>
+        <footer class="text-center	pt-5 font-bold text-5xl" >Total:$ <span id="footer-total">1299</span> </footer>
+        <script src="/js/macbook.js"></script>
+    </body>
+
+</html>
