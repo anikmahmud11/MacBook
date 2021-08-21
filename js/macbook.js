@@ -79,9 +79,9 @@ document.getElementById('promoBtn').addEventListener('click',function(){
 if( promoCode == 'stevekaku'){
   const footerMainTotal = document.getElementById('footer-total');
   
-  const footerPreviousTotal = parseInt(footerMainTotal.innerText);
+  const footerPreviousTotal = parseFloat(footerMainTotal.innerText);
   
-  const discountPrice = parseInt( (footerPreviousTotal*20) /100) ;
+  const discountPrice = parseFloat( (footerPreviousTotal*20) /100) ;
   const finalDiscountPrice =  footerPreviousTotal - discountPrice ;
   footerTotal.innerText = finalDiscountPrice;
   promoBtn. disabled = true;
