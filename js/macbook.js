@@ -69,6 +69,7 @@ function updateTotal(){
 
 }
 
+//Add promo code and discount price
 document.getElementById('promoBtn').addEventListener('click',function(){
     const promoInput = document.getElementById('promo-input');
     const promoCode = promoInput.value;
@@ -85,6 +86,5 @@ if( promoCode == 'stevekaku'){
   footerTotal.innerText = finalDiscountPrice;
   promoBtn. disabled = true;
 }
-
 });
 
