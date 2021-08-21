@@ -69,7 +69,7 @@ function updateTotal(){
 
 }
 
-//Add promo code and discount price
+//Add promo code and discount
 document.getElementById('promoBtn').addEventListener('click',function(){
     const promoInput = document.getElementById('promo-input');
     const promoCode = promoInput.value;
@@ -79,7 +79,7 @@ document.getElementById('promoBtn').addEventListener('click',function(){
 if( promoCode == 'stevekaku'){
   const footerMainTotal = document.getElementById('footer-total');
   
-  const footerPreviousTotal = parseFloat(footerMainTotal.innerText);
+  const footerPreviousTotal = parseInt(footerMainTotal.innerText);
   
   const discountPrice = parseFloat( (footerPreviousTotal*20) /100) ;
   const finalDiscountPrice =  footerPreviousTotal - discountPrice ;
