@@ -69,21 +69,22 @@ function updateTotal(){
 
 }
 
-document.getElementById('promo-apply-btn').addEventListener('click',function(){
+document.getElementById('promoBtn').addEventListener('click',function(){
     const promoInput = document.getElementById('promo-input');
     const promoCode = promoInput.value;
+   
     promoInput.value='';
   
 if( promoCode == 'stevekaku'){
   const footerMainTotal = document.getElementById('footer-total');
   
-  const hello = parseInt(footerMainTotal.innerText);
+  const footerPreviousTotal = parseInt(footerMainTotal.innerText);
   
-  const discountPrice = parseInt( (hello*20) /100) ;
-  const finalDiscountPrice =  hello - discountPrice ;
+  const discountPrice = parseInt( (footerPreviousTotal*20) /100) ;
+  const finalDiscountPrice =  footerPreviousTotal - discountPrice ;
   footerTotal.innerText = finalDiscountPrice;
-  
- 
+  promoBtn. disabled = true;
 }
 
 });
+
