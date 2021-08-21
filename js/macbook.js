@@ -79,7 +79,7 @@ if( promoCode == 'stevekaku'){
   
   const hello = parseInt(footerMainTotal.innerText);
   
-  const discountPrice = parseInt( hello/20) ;
+  const discountPrice = parseInt( (hello*20) /100) ;
   const finalDiscountPrice =  hello - discountPrice ;
   footerTotal.innerText = finalDiscountPrice;
   
