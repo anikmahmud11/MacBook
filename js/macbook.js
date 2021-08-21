@@ -72,13 +72,17 @@ function updateTotal(){
 document.getElementById('promo-apply-btn').addEventListener('click',function(){
     const promoInput = document.getElementById('promo-input');
     const promoCode = promoInput.value;
-    // console.log(promoCode);
+    promoInput.value='';
+  
 if( promoCode == 'stevekaku'){
-  const discount =parseInt ( footerTotal/20);
-  // console.log(discount);
-  const finalDiscount = parseInt(discount.innerText);
-  footerTotal.innerText = finalDiscount;
-  console.log(finalDiscount);
+  const footerMainTotal = document.getElementById('footer-total');
+  
+  const hello = parseInt(footerMainTotal.innerText);
+  
+  const discountPrice = parseInt( hello/20) ;
+  const finalDiscountPrice =  hello - discountPrice ;
+  footerTotal.innerText = finalDiscountPrice;
+  
  
 }
 
